@@ -1,0 +1,61 @@
+[{
+    "id": 1,
+    "product": "HP Veer",
+    "description": 2011,
+    "price": "$836.14",
+    "picture": "cityscape.jpg"
+  }, {
+    "id": 2,
+    "product": "LG Watch W7",
+    "description": 2018,
+    "price": "$186.99",
+    "picture": "landscape.jpg"
+  }, {
+    "id": 3,
+    "product": "Huawei U8687 Cronos",
+    "description": 2013,
+    "price": "$404.45",
+    "picture": "nature.jpg"
+  }, {
+    "id": 4,
+    "product": "Samsung B100",
+    "description": 2008,
+    "price": "$833.25",
+    "picture": "nature.jpg"
+  }, {
+    "id": 5,
+    "product": "Nokia X5 TD-SCDMA",
+    "description": 2010,
+    "price": "$392.02",
+    "picture": "landscape.jpg"
+  }, {
+    "id": 6,
+    "product": "BLU Touchbook M7 Pro",
+    "description": 2017,
+    "price": "$587.84",
+    "picture": "portrait.jpg"
+  }, {
+    "id": 7,
+    "product": "Unnecto Edge",
+    "description": 2011,
+    "price": "$145.71",
+    "picture": "landscape.jpg"
+  }, {
+    "id": 8,
+    "product": "Realme 6i (India)",
+    "description": 2020,
+    "price": "$505.53",
+    "picture": "cityscape.jpg"
+  }, {
+    "id": 9,
+    "product": "Lava Iris 470",
+    "description": 2015,
+    "price": "$607.10",
+    "picture": "cityscape.jpg"
+  }, {
+    "id": 10,
+    "product": "vivo X27",
+    "description": 2019,
+    "price": "$455.23",
+    "picture": "cityscape.jpg"
+  }]
