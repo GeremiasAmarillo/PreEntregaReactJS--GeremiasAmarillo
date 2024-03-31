@@ -1,0 +1,34 @@
+[
+  {
+    "name": "Samsung",
+    "id": 1,
+    "category": "Android",
+    "description": "Pantalla vibrante, potente cámara, larga duración de batería, diseño elegante.",
+    "price": "u$d 1700",
+    "pictureUrl": "https://i.ebayimg.com/thumbs/images/g/YekAAOSwhC9f7NmT/s-l640.jpg"
+  },
+  {
+    "name": "BLU",
+    "id": 2,
+    "category": "Android",
+    "description": "Diseño compacto, cámara de calidad, pantalla nítida, batería duradera.",
+    "price": "u$d 2150",
+    "pictureUrl": "https://tselectronica.com.uy/usr/data/image/originales/2022-05-02_04423330.jpg"
+  },
+  {
+    "name": "IPhone",
+    "id": 3,
+    "category": "iOS",
+    "description": "Pantalla retina, chip potente, cámara avanzada, seguridad biométrica, diseño elegante.",
+    "price": "u$d 4500",
+    "pictureUrl": "https://www.cronista.com/files/image/649/649294/64b63873c55f8.jpg"
+  },
+  {
+    "name": "Sony",
+    "id": 4,
+    "category": "Sony",
+    "description": "Pantalla brillante, audio de alta fidelidad, cámara de calidad.",
+    "price": "u$d 1230",
+    "pictureUrl": "https://m.media-amazon.com/images/I/61qfFJaDypL._AC_UF894,1000_QL80_.jpg"
+  }
+]
