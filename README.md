@@ -1,8 +1,16 @@
-# React + Vite
+# Holaa!! Soy Geremias Amarillo
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### Esta repo es sobre mi Ecommerce de venta de celulares.
 
-Currently, two official plugins are available:
+##### - Esta aplicación está creada con Vite
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+##### Como clonar la repo?
+
+--Abre tu terminal o línea de comandos y utiliza el comando git clone seguido de la URL del repositorio que deseas clonar. Por ejemplo: git clone <URL_del_repositorio>
+--Una vez que el repositorio ha sido clonado, accede al directorio del proyecto y ejecuta el comando para instalar las dependencias. En un proyecto Vite, normalmente sería: cd <nombre_del_directorio>
+npm install
+--Después de instalar las dependencias, puedes ejecutar el proyecto Vite. Por lo general, esto se hace con el siguiente comando: npm run dev
+
+¡Y eso es todo! Ahora deberías tener el repositorio clonado y el proyecto Vite ejecutándose localmente en tu máquina.
+
+# Gracias profe y tutores por esta excelente cursada!!

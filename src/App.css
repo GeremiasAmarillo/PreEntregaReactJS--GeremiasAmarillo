@@ -1,5 +1,8 @@
 #cart-widget > span {
-    color: black;
-    padding-left: 1rem;
-    font-weight: 900;
+  color: black;
+  padding-left: 1rem;
+  font-weight: 900;
+}
+body {
+  background-color: antiquewhite;
 }

@@ -10,17 +10,17 @@ export const NavBar = () => {
     <>
       <Navbar bg="warning" data-bs-theme="warning">
         <Container>
-          <Navbar.Brand to="http://localhost:5174/" as={NavLink}>
+          <Navbar.Brand as={NavLink} to="/">
             Ecommerce Geremias
           </Navbar.Brand>
           <Nav className="me-auto">
-            <Nav.Link to="/category/Android" as={NavLink}>
+            <Nav.Link as={NavLink} to="/category/Android">
               Android
             </Nav.Link>
-            <Nav.Link to="/category/Sony" as={NavLink}>
+            <Nav.Link as={NavLink} to="/category/Sony">
               Sony
             </Nav.Link>
-            <Nav.Link to="/category/iOS" as={NavLink}>
+            <Nav.Link as={NavLink} to="/category/iOS">
               iOS
             </Nav.Link>
           </Nav>
