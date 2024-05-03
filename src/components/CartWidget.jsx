@@ -13,9 +13,9 @@ export const CartWidget = () => {
     <Link to="/cart">
       <div
         style={{
-          backgroundColor: "grey",
-          borderRadius: "50%",
-          border: "solid 10px grey",
+          backgroundColor: "gold",
+          borderRadius: "30%",
+          border: "solid 10px gold",
         }}
       >
         <img src={cart} alt="logoDeCarrito" />

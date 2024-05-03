@@ -22,21 +22,36 @@ export const NavBar = () => {
           </Navbar.Brand>
           <Nav className="me-auto">
             <Nav.Link
-              style={{ fontSize: "2rem", color: "white" }}
+              style={{
+                fontSize: "2rem",
+                color: "white",
+                border: "solid 1px gold",
+                marginRight: "20px",
+              }}
               as={NavLink}
               to="/category/Android"
             >
               Android
             </Nav.Link>
             <Nav.Link
-              style={{ fontSize: "2rem", color: "white" }}
+              style={{
+                fontSize: "2rem",
+                color: "white",
+                border: "solid 1px gold",
+                marginRight: "20px",
+              }}
               as={NavLink}
               to="/category/Sony"
             >
               Sony
             </Nav.Link>
             <Nav.Link
-              style={{ fontSize: "2rem", color: "white" }}
+              style={{
+                fontSize: "2rem",
+                color: "white",
+                border: "solid 1px gold",
+                marginRight: "20px",
+              }}
               as={NavLink}
               to="/category/iOS"
             >

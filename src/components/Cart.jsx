@@ -2,7 +2,8 @@ import { Container, Button } from "react-bootstrap";
 import { useContext, useState } from "react";
 import { CartContext } from "../contexts/CartContext";
 import { getFirestore, collection, addDoc } from "firebase/firestore";
-import { Link } from "react-router-dom"; // Importa Link desde react-router-dom
+import { Link } from "react-router-dom";
+import Swal from "sweetalert2";
 
 const initialValues = {
   name: "",
@@ -37,7 +38,11 @@ export const Cart = () => {
     addDoc(orderCollection, order)
       .then(({ id }) => {
         if (id) {
-          alert("Su orden: " + id + " ha sido completada!");
+          Swal.fire({
+            title: "Compra exitosa!!",
+            text: "Su orden: " + id + " ha sido completada!",
+            icon: "success",
+          });
         }
       })
       .finally(() => {
@@ -78,46 +83,49 @@ export const Cart = () => {
       <div className="mb-3" style={{ color: "white", fontSize: "2rem" }}>
         <strong>Total:</strong> ${total()}
       </div>
-      <Button variant="danger" onClick={handleClear}>
-        Borrar Carrito
-      </Button>
+
+      {items.length > 0 && (
+        <div>
+          <Button variant="danger" onClick={handleClear}>
+            Borrar Carrito
+          </Button>
+          <form className="mt-4" style={{ color: "white", fontSize: "1.5rem" }}>
+            <label>Nombre:</label>
+            <input
+              type="text"
+              value={values.name}
+              name="name"
+              onChange={handleChange}
+              className="form-control mb-3"
+            />
+            <label>Celular:</label>
+            <input
+              type="text"
+              value={values.phone}
+              name="phone"
+              onChange={handleChange}
+              className="form-control mb-3"
+            />
+            <label>Email:</label>
+            <input
+              type="text"
+              value={values.email}
+              name="email"
+              onChange={handleChange}
+              className="form-control mb-3"
+            />
+            <Button variant="primary" onClick={handleSubmit}>
+              Enviar
+            </Button>
+          </form>
+        </div>
+      )}
       {items.length === 0 && (
         <Link to="/">
-          <Button variant="primary" className="mt-4">
-            Ver los productos
+          <Button variant="success" className="mt-4">
+            Volver al Menú
           </Button>
         </Link>
-      )}
-      {items.length > 0 && (
-        <form className="mt-4" style={{ color: "white", fontSize: "1.5rem" }}>
-          <label>Nombre:</label>
-          <input
-            type="text"
-            value={values.name}
-            name="name"
-            onChange={handleChange}
-            className="form-control mb-3"
-          />
-          <label>Celular:</label>
-          <input
-            type="text"
-            value={values.phone}
-            name="phone"
-            onChange={handleChange}
-            className="form-control mb-3"
-          />
-          <label>Email:</label>
-          <input
-            type="text"
-            value={values.email}
-            name="email"
-            onChange={handleChange}
-            className="form-control mb-3"
-          />
-          <Button variant="primary" onClick={handleSubmit}>
-            Enviar
-          </Button>
-        </form>
       )}
     </Container>
   );
