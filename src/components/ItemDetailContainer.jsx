@@ -19,7 +19,12 @@ export const ItemDetailContainer = () => {
     });
   }, [id]);
 
-  if (!product) return <div style={{ color: "green" }}>loading</div>;
+  if (!product)
+    return (
+      <div style={{ color: "gold", textAlign: "center", fontSize: "4rem" }}>
+        loading...
+      </div>
+    );
 
   return <ItemDetail product={product} />;
 };

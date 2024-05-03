@@ -11,8 +11,16 @@ export const CartWidget = () => {
 
   return (
     <Link to="/cart">
-      <img src={cart} alt="logoDeCarrito" />
-      {total}
+      <div
+        style={{
+          backgroundColor: "grey",
+          borderRadius: "50%",
+          border: "solid 10px grey",
+        }}
+      >
+        <img src={cart} alt="logoDeCarrito" />
+        {total}
+      </div>
     </Link>
   );
 };

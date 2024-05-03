@@ -12,21 +12,23 @@ export const ItemDetail = ({ product }) => {
 
   return (
     <Container className="mx-auto">
-      <h1 className="py-4" style={{ color: "green" }}>
+      <h1 className="py-4" style={{ color: "white", fontSize: "5rem" }}>
         {product.title}
       </h1>
       <img
         className="py-3"
-        style={{ height: 350, width: "auto" }}
+        style={{ height: 500, width: "auto" }}
         src={product.pictureUrl}
         alt="imgDeta"
       />
-      <h5 style={{ color: "green" }}>{product.description}</h5>
+      <h5 style={{ color: "white", fontSize: "2rem" }}>
+        {product.description}
+      </h5>
       <div
         className="py-3"
-        style={{ color: "red" }}
+        style={{ color: "green", fontSize: "1.5rem" }}
       >{`Stock ${product.stock}`}</div>
-      <h4 style={{ color: "green" }}> $ {product.price}</h4>
+      <h4 style={{ color: "white", fontSize: "2rem" }}> $ {product.price}</h4>
       <ItemCount stock={product.stock} onAdd={add} />
     </Container>
   );

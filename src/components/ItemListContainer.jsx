@@ -26,7 +26,7 @@ export const ItemListContainer = () => {
     } else {
       refCollection = query(
         collection(db, "items"),
-        where("categoryId", "==", id) // Agrega el valor que estás buscando
+        where("categoryId", "==", id)
       );
     }
 
@@ -40,7 +40,7 @@ export const ItemListContainer = () => {
   }, [id]);
 
   return (
-    <Container className="mx-auto">
+    <Container>
       <ItemList products={products} />
     </Container>
   );

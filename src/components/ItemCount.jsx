@@ -1,4 +1,6 @@
+import React from "react";
 import { useState } from "react";
+import Button from "react-bootstrap/Button";
 
 export const ItemCount = ({ onAdd, stock }) => {
   const [quantity, setQuantity] = useState(1);
@@ -17,23 +19,29 @@ export const ItemCount = ({ onAdd, stock }) => {
   };
 
   return (
-    <div className="d-flex">
-      <div
-        style={{ padding: "0 10px", color: "red", fontWeight: 900 }}
+    <div className="d-flex align-items-center">
+      <Button
+        variant="danger"
+        style={{ marginRight: "10px" }}
         onClick={handleDecrease}
       >
         -
-      </div>
+      </Button>
       <input type="number" value={quantity} readOnly />
-      <div
-        style={{ padding: "0 10px", color: "red", fontWeight: 900 }}
+      <Button
+        variant="danger"
+        style={{ marginLeft: "10px" }}
         onClick={handleIncrease}
       >
         +
-      </div>
-      <button type="button" onClick={handleAdd}>
+      </Button>
+      <Button
+        variant="primary"
+        style={{ marginLeft: "10px" }}
+        onClick={handleAdd}
+      >
         Agregar al carrito
-      </button>
+      </Button>
     </div>
   );
 };

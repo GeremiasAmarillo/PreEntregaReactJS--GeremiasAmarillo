@@ -8,19 +8,38 @@ import { CartWidget } from "./CartWidget";
 export const NavBar = () => {
   return (
     <>
-      <Navbar bg="warning" data-bs-theme="warning">
+      <Navbar
+        style={{ backgroundColor: "transparent" }}
+        data-bs-theme="warning"
+      >
         <Container>
-          <Navbar.Brand as={NavLink} to="/">
+          <Navbar.Brand
+            style={{ fontSize: "2.5rem", color: "gold" }}
+            as={NavLink}
+            to="/"
+          >
             Ecommerce Geremias
           </Navbar.Brand>
           <Nav className="me-auto">
-            <Nav.Link as={NavLink} to="/category/Android">
+            <Nav.Link
+              style={{ fontSize: "2rem", color: "white" }}
+              as={NavLink}
+              to="/category/Android"
+            >
               Android
             </Nav.Link>
-            <Nav.Link as={NavLink} to="/category/Sony">
+            <Nav.Link
+              style={{ fontSize: "2rem", color: "white" }}
+              as={NavLink}
+              to="/category/Sony"
+            >
               Sony
             </Nav.Link>
-            <Nav.Link as={NavLink} to="/category/iOS">
+            <Nav.Link
+              style={{ fontSize: "2rem", color: "white" }}
+              as={NavLink}
+              to="/category/iOS"
+            >
               iOS
             </Nav.Link>
           </Nav>
